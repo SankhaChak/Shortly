@@ -65,12 +65,14 @@ function copyShortLink(e) {
 function init() {
   const ls = localStorage.getItem('shortLinks');
   shortLinks = JSON.parse(ls);
-  shortLinks.forEach(singleLink => {
-    const { userLink, shortLink } = singleLink;
-    addShortLink(userLink, shortLink);
-  });
-  const copyBtn = document.querySelectorAll('.copy__btn');
-  copyBtn.forEach(btn => btn.addEventListener('click', copyShortLink));
+  if (shortLinks.length >= 1) {
+    shortLinks.forEach(singleLink => {
+      const { userLink, shortLink } = singleLink;
+      addShortLink(userLink, shortLink);
+    });
+    const copyBtn = document.querySelectorAll('.copy__btn');
+    copyBtn.forEach(btn => btn.addEventListener('click', copyShortLink));
+  }
 }
 
 init();
