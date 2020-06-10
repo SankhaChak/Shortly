@@ -18,7 +18,7 @@ Responsive URL Shortener Web Application built as a part of the [FrontendMentor]
 
 ![Desktop view of the app](https://user-images.githubusercontent.com/61096193/84329043-76ed4180-ab38-11ea-89b2-b775fe10f3a0.gif)
 
-### Technology Involved
+### Technologies Involved
 
 ---
 
